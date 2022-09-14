@@ -1,4 +1,4 @@
-const template = document.createElement('template');
+const template = document.createElement('template')
 template.innerHTML = `
   <style>
     :host {
@@ -56,47 +56,47 @@ template.innerHTML = `
       &times;
     </button>
   </div>
-`;
+`
 
 export class XAlert extends HTMLElement {
   static get observedAttributes() {
-    return ['closable'];
+    return ['closable']
   }
 
-  _closable = false;
+  _closable = false
 
   get closable() {
-    return this._closable;
+    return this._closable
   }
 
   set closable(value) {
-    this._closable = value;
-    
+    this._closable = value
+
     if (this.buttonElement) {
-      this.buttonElement.hidden = value;
+      this.buttonElement.hidden = value
     }
   }
 
   get buttonElement() {
-    return this.shadowRoot.querySelector('button');
+    return this.shadowRoot.querySelector('button')
   }
 
   constructor() {
-    super();
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    super()
+    this.attachShadow({ mode: 'open' })
+    this.shadowRoot.appendChild(template.content.cloneNode(true))
   }
 
   connectedCallback() {
-    this.buttonElement.hidden = !this._closable;
-    this.buttonElement.addEventListener('click', () => this.dispatchEvent(new CustomEvent('closeChange')));
+    this.buttonElement.hidden = !this._closable
+    this.buttonElement.addEventListener('click', () => this.dispatchEvent(new CustomEvent('closeChange')))
   }
 
   attributeChangedCallback(attrName, oldValue, newValue) {
     if (attrName === 'closable' && oldValue !== newValue) {
-      this.closable = newValue;
+      this.closable = newValue
     }
   }
 }
 
-customElements.define('x-alert', XAlert);
+customElements.define('x-alert', XAlert)
