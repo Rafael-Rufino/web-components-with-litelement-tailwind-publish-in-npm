@@ -12,10 +12,10 @@ export class Heading extends LitElement {
       .description {
         font-size: 1rem;
         line-height: 120%;
-        color: white;
+        color: #646981;
       }
       .title {
-        color: white;
+        color: #363843;
         font-weight: 700;
         font-size: 1.5rem;
         line-height: 120%;
@@ -30,20 +30,12 @@ export class Heading extends LitElement {
   description!: string
 
   render() {
-    console.log('this', { a: this.description, b: this.title })
     return html`
       <div>
-        <h1 class="title">title: ${this.title}</h1>
-        <p> ${this.description ? html`${this.description }`: ''} </p>
+        <h1 class="title">${this.title}</h1>
+        <p class="description"> ${this.description ? html`${this.description }`: ''} </p>
       </div>
     `
   }
 }
 
-// export default Heading
-
-// declare global {
-//   interface HTMLElementTagNameMap {
-//     'heading-app': Heading
-//   }
-// }

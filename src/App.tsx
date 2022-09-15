@@ -1,61 +1,48 @@
 import React from 'react'
+
 import './App.css'
-import './litelements/pushbutton-element'
-import './components/button-app'
-import './components/input-app'
-import { Heading } from './components/heading-app'
-import './components/alert.js'
-import { PeopleApp } from './components/people/people-app'
+
 import { createComponent } from '@lit-labs/react'
 
-const HeadingA = createComponent(React, 'heading-app', Heading)
-const PeopleAppA = createComponent(React, 'people-app', PeopleApp)
+import { Heading } from './components/Heading'
+import { Input } from './components/Input'
+import { Button } from './components/Button'
+import {LinkIcon} from './components/LinkIcon'
+import { CheckText } from './components/CheckText'
+
+import LockImg from './assets/lock.svg'
+
+const HeadingApp = createComponent(React, 'heading-app', Heading)
+const InputApp = createComponent(React, 'input-app', Input)
+const ButtonApp = createComponent(React, 'button-app', Button)
+const LinkIconApp = createComponent(React, 'linkicon-app', LinkIcon)
+const CkeckTextApp= createComponent(React, 'checktext-app', CheckText)
 
 function App() {
   return (
     <div className="App">
       <div className="Content">
-        <HeadingA title="aa" description={'sdasd'} />
-        <PeopleAppA
-          props={[
-            {
-              name: 'Person 1',
-              image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200',
-              email: '1@test.com',
-              title: 'Official title',
-              color: '84b22f',
-            },
-            {
-              name: 'Person 2',
-              image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200',
-              email: '2@test.com',
-              title: 'Official title',
-              color: '674b1b',
-            },
-            {
-              name: 'Person 3',
-              image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200',
-              email: '3@test.com',
-              title: '',
-              color: 'a2a5dc',
-            },
-            {
-              name: 'Person 4',
-              image: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=200',
-              email: '4@test.com',
-              title: 'Official title',
-              color: '9e3997',
-            },
-          ]}
-        />
-        {/* <br/>
-        <input-app/>
-        <input-app/>
-        <br />
-        <button-app/>  */}
+        <HeadingApp title="Acessando sua conta" description='Informe seu login e senha para continuar' />
+        <InputApp label='Seu login' placeholder="E-mail, CPF, Usuário ou Celular" type='text'  onChange={() => {}}/>
+        <InputApp label='Sua senha' placeholder="Digite a sua senha"  type='password' onChange={() => {}} />
+        <CkeckTextApp name='Manter conectado' />
+        <ButtonApp type='submit' name='Acessar sua conta' onClick={()=>{}}/>
+        <LinkIconApp src={LockImg} title="Você deseja redefinir a senha ?" href="https://www.gazin.com.br"  name='Esqueceu sua senha?'/>
       </div>
     </div>
   )
 }
 
 export default App
+
+{/* <PeopleAppA
+  props={[
+    {
+      name: 'Person 1',
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200',
+      email: '1@test.com',
+      title: 'Official title',
+      color: '84b22f',
+    },
+  ]}
+/> */}

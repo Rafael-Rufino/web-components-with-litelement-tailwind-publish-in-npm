@@ -1,7 +1,5 @@
-// import { LitElement, html } from 'lit-element';
-// import {customElement } from 'lit/decorators';
-// import { peopleContent } from './content'
-import { LitElement, html, customElement, property, css } from 'lit-element'
+
+import { LitElement, html, customElement, property} from 'lit-element'
 import './person-card'
 
 @customElement('people-app')
