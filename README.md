@@ -1,7 +1,7 @@
 
 <h3 align="center">
     <br><br>
-    <b>Validando uma POC - (PROOF OF CONCEPT) - Atraves da crianção de uma biblioteca Npm com Web Component utlizando a lib lit-element para criar componentes reutilizaveis por qualquer frameworks</b>  
+    <b>Validando uma POC - (PROOF OF CONCEPT) - Atraves da criação de uma biblioteca Npm com Web Component utlizando a Lib lit-element para criar componentes reutilizaveis em qualquer frameworks</b>  
     <br>
 </h3>
 <br>
@@ -22,6 +22,11 @@
 
 O projeto consiste em criar uma pagina de login
 
+## :heavy_check_mark: :iphone: Aplicação Front end
+
+<h1 align="center">
+    <img alt="home" src="./.github/login.jpeg" width="900px">
+</h1>
 
 <a id="tecnologias-utilizadas"></a>
 
@@ -34,12 +39,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [ ] Npm-run-all
 - [ ] lit-element
 - [ ] GitHub Package Registry
-
-## :heavy_check_mark: :iphone: Aplicação Front end
-
-<h1 align="center">
-    <img alt="home" src="./.github/login.jpeg" width="900px">
-</h1>
 
 
 <p> Utilize npm install para instalar as dependências do projeto. Em seguida, inicie o projeto.</p>
