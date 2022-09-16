@@ -16,7 +16,7 @@
 
 
 ## :bookmark: Sobre
-<strong>Crianção de uma biblioteca Npm com Web Component utlizando a Lib lit-element</strong> 
+<strong>Criação de uma biblioteca Npm com Web Component utlizando a Lib lit-element</strong> 
 
 ## Proposta
 
