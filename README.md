@@ -63,10 +63,16 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - Push a sua branch: `git push origin my-feature`
 
 <a id="como-usar"></a>
-## :fire: Como usar
 
-1. Faça um clone :
+ ## :fire: Como usar
 
+1. Faça o clone da aplicação web utilizada para consumir a biblioteca Npm  :
+ ```sh
+    $ git clone https://github.com/Rafael-Rufino/web
+ ```
+
+
+2. Faça o clone do repositorio da biblioteca NPM :
 ```sh
   $ git clone https://github.com/Rafael-Rufino/web-components-with-litelement-publish-in-npm
 ```
