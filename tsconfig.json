@@ -18,7 +18,6 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "legacy decorators": true,
     "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,

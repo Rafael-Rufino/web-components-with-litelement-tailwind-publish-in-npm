@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/playground
+./s
+/dist
 /.pnp
 .pnp.js
 

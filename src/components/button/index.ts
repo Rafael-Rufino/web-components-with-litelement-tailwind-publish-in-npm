@@ -2,7 +2,7 @@ import { LitElement, html, customElement, property, css } from 'lit-element'
 
 
 @customElement('button-app')
-export class Button extends LitElement {
+ class Button extends LitElement {
   static styles = [
     css`
       #btn {
@@ -41,3 +41,4 @@ export class Button extends LitElement {
 }
 
 
+export { Button };

@@ -1,14 +1,13 @@
+import { createComponent } from '@lit-labs/react'
 import React from 'react'
 
 import './App.css'
 
-import { createComponent } from '@lit-labs/react'
-
-import { Heading } from './components/Heading'
-import { Input } from './components/Input'
-import { Button } from './components/Button'
-import {LinkIcon} from './components/LinkIcon'
-import { CheckText } from './components/CheckText'
+import { Heading } from './components/heading'
+import { Input } from './components/input'
+import { Button } from './components/button'
+import { LinkIcon } from './components/linkIcon'
+import { CheckText } from './components/checkText'
 
 import LockImg from './assets/lock.svg'
 
@@ -27,7 +26,7 @@ function App() {
         <InputApp label='Sua senha' placeholder="Digite a sua senha"  type='password' onChange={() => {}} />
         <CkeckTextApp name='Manter conectado' />
         <ButtonApp type='submit' name='Acessar sua conta' onClick={()=>{}}/>
-        <LinkIconApp src={LockImg} title="Você deseja redefinir a senha ?" href="https://www.gazin.com.br"  name='Esqueceu sua senha?'/>
+        <LinkIconApp  src={LockImg} title="Você deseja redefinir a senha ?" href="https://www.gazin.com.br"  name='Esqueceu sua senha?'/>
       </div>
     </div>
   )
