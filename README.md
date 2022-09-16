@@ -1,7 +1,7 @@
 
 <h3 align="center">
     <br><br>
-    <b>Validando uma POC - (PROOF OF CONCEPT) - Atraves da criação de uma biblioteca Npm com Web Component utlizando a Lib lit-element para criar componentes reutilizaveis em qualquer frameworks</b>  
+    <b>Validando uma POC - (PROOF OF CONCEPT) - Atraves da criação de uma biblioteca Npm com Web Component utlizando a Lib - lit-element para criar componentes reutilizaveis em qualquer frameworks</b>  
     <br>
 </h3>
 <br>
@@ -16,7 +16,7 @@
 
 
 ## :bookmark: Sobre
-<strong>Criação de uma biblioteca Npm com Web Component utlizando a Lib lit-element</strong> 
+<strong>Criando uma biblioteca Npm com Web Component - utlizando a Lib - lit-element</strong> 
 
 ## Proposta
 
