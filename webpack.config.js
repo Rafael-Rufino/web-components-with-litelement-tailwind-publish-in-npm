@@ -1,1 +1,2 @@
-presets: ["@babel/preset-env", "@babel/preset-react"]
+/* eslint-disable no-unused-expressions */
+["@babel/preset-env", "@babel/preset-react"];
