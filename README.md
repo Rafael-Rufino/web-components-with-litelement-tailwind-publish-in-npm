@@ -1,4 +1,3 @@
-
 <h3 align="center">
     <br><br>
     <b>Validando uma POC - (PROOF OF CONCEPT) - Atraves da criação de uma biblioteca Npm com Web Component utlizando a Lib - lit-element para criar componentes reutilizaveis em qualquer frameworks</b>  
@@ -14,9 +13,9 @@
 - [Como Usar](#como-usar)
 - [Como Contribuir](#como-contribuir)
 
-
 ## :bookmark: Sobre
-<strong>Criando uma biblioteca Npm com Web Component - utlizando a Lib - lit-element</strong> 
+
+<strong>Criando uma biblioteca Npm com Web Component - utlizando a Lib - lit-element e tailwindCss</strong>
 
 ## Proposta
 
@@ -35,11 +34,11 @@ O projeto consiste em criar uma pagina de login
 O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 - [ ] Typescript
+- [ ] TailwindCss
 - [ ] Rollup
 - [ ] Npm-run-all
 - [ ] lit-element
 - [ ] GitHub Package Registry
-
 
 <p> Utilize npm install para instalar as dependências do projeto. Em seguida, inicie o projeto.</p>
 
@@ -52,8 +51,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
   npm start
 
 ```
-<a id="como-contribuir"></a>
 
+<a id="como-contribuir"></a>
 
 # :recycle: Como contribuir
 
@@ -64,22 +63,23 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 <a id="como-usar"></a>
 
- ## :fire: Como usar
+## :fire: Como usar
 
-1. Faça o clone da aplicação web utilizada para consumir a biblioteca Npm  :
- ```sh
-    $ git clone https://github.com/Rafael-Rufino/web
- ```
+1. Faça o clone da aplicação web utilizada para consumir a biblioteca Npm :
 
+```sh
+   $ git clone https://github.com/Rafael-Rufino/web
+```
 
 2. Faça o clone do repositorio da biblioteca NPM :
+
 ```sh
   $ git clone https://github.com/Rafael-Rufino/web-components-with-litelement-publish-in-npm
 ```
+
 ## :memo: License
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
 
 <h4 align="center">
     Feito com 💜 by <a href="https://portfolio-rafael-rufino.vercel.app/" target="_blank">Rafael Rufino</a>

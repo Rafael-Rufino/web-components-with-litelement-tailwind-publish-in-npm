@@ -6,7 +6,7 @@ import postcss from "rollup-plugin-postcss"; // import postcss plugin
 
 export default [
   {
-    input: "src/main.ts",
+    input: "src/index.ts",
     output: [
       {
         file: "playground/src/component-lib/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@rafael-rufino/web-components-with-litelement-publish-in-npm",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Minha biblioteca de components Npm",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
