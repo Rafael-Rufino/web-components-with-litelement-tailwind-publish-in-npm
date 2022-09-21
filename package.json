@@ -8,7 +8,7 @@
   "dependencies": {
     "@lit-labs/react": "^1.0.8",
     "@rafael-rufino/npm-publish-lit-element": "^1.0.1",
-    "@rafael-rufino/web-components-with-litelement-publish-in-npm": "^0.1.1",
+    "@rafael-rufino/web-components-with-litelement-publish-in-npm": "^0.1.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm run && npm run dev",
+    "start": "react-scripts start && npm run dev",
     "dev": "npm-run-all --parallel build-watch",
     "build": "rollup -c",
     "build-watch": "rollup -c -w"
