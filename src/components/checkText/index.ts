@@ -1,42 +1,29 @@
-import { LitElement, html, customElement, property, css } from 'lit-element'
+import "../../styles.css";
+import { LitElement, html, customElement, property } from "lit-element";
 
-@customElement('checktext-app')
+@customElement("checktext-app")
 export class CheckText extends LitElement {
-  static styles = [
-    css`
-      div {
-        display: flex;
-        justify-content: left;
-        align-items: left;
-        padding-top:25px;
-        padding-bottom: 34px;
-      }
-      .text {
-        font-size: 1rem;
-        line-height: 120%;
-        color:#4D5163;
-        padding-left: 16px;
-
-      }
-    `,
-  ]
+  createRenderRoot() {
+    return this;
+  }
 
   @property()
-  id!: string
+  id!: string;
 
   @property()
-  name!: string
+  name!: string;
 
   @property()
-  value!: string
-  
+  value!: string;
+
   render() {
     return html`
-      <div>
-        <input type="checkbox" id=${this.id} value=${this.value}/>
-        <label class="text" id=${this.id}>${this.name}</label>
+      <div class="flex justify-start items-center pt-6 pb-[34px]">
+        <input type="checkbox" id=${this.id} value=${this.value} />
+        <label class="font-base pl-4 leading-tight text-gray-600" id=${this.id}
+          >${this.name}</label
+        >
       </div>
-    `
+    `;
   }
 }
-

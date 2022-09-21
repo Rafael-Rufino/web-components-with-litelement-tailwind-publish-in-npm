@@ -1,41 +1,28 @@
-import { LitElement, html, customElement, property, css } from 'lit-element'
+import "../../styles.css";
+import { LitElement, html, customElement, property } from "lit-element";
 
-@customElement('heading-app')
+@customElement("heading-app")
 export class Heading extends LitElement {
-  static styles = [
-    css`
-      div {
-        position: relative;
-        width: 100%;
-        text-align: center;
-      }
-      .description {
-        font-size: 1rem;
-        line-height: 120%;
-        color: #646981;
-      }
-      .title {
-        color: #363843;
-        font-weight: 700;
-        font-size: 1.5rem;
-        line-height: 120%;
-      }
-    `,
-  ]
+  createRenderRoot() {
+    return this;
+  }
 
   @property()
-  title!: string
-  
+  title!: string;
+
   @property()
-  description!: string
+  description!: string;
 
   render() {
     return html`
-      <div>
-        <h1 class="title">${this.title}</h1>
-        <p class="description"> ${this.description ? html`${this.description }`: ''} </p>
+      <div class="w-full text-center relative">
+        <h1 class="text-2xl leading-normal font-bold text-gray-300">
+          ${this.title}
+        </h1>
+        <p class="text-base text-gray-400 leading-normal pb-6 pt-4">
+          ${this.description ? html`${this.description}` : ""}
+        </p>
       </div>
-    `
+    `;
   }
 }
-
