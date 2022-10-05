@@ -1,6 +1,6 @@
 <h3 align="center">
     <br><br>
-    <b>Validando uma POC - (PROOF OF CONCEPT) - Atraves da criação de uma biblioteca Npm com Web Component utlizando a Lib - lit-element para criar componentes reutilizaveis em qualquer frameworks</b>  
+    <b>Validando uma POC - (PROOF OF CONCEPT) - Atraves da criação de uma biblioteca Npm com Web Component utlizando a Lib - lit-element para criar componentes reutilizaveis em qualquer frameworks ( Angular, React, Vue)  </b>  
     <br>
 </h3>
 <br>
@@ -75,6 +75,12 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 ```sh
   $ git clone https://github.com/Rafael-Rufino/web-components-with-litelement-publish-in-npm
+```
+## Versão da lib atualizada
+
+```
+$ npm install @rafael-rufino/web-components-with-litelement-publish-in-npm@0.1.5
+
 ```
 
 ## :memo: License
