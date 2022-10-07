@@ -6,10 +6,10 @@ import postcss from "rollup-plugin-postcss"; // import postcss plugin
 
 export default [
   {
-    input: "src/index.ts",
+    input: "src/main.ts",
     output: [
       {
-        file: "playground/src/component-lib/index.js",
+        file: "playground/src/component-lib/main.js",
         format: "esm",
         banner: "/* eslint-disable */",
       },
