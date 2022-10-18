@@ -7,8 +7,6 @@
   "author": "Rafael Rufino <rafaelrufino.52@gmail.com>",
   "dependencies": {
     "@lit-labs/react": "^1.0.8",
-    "@rafael-rufino/npm-publish-lit-element": "^1.0.1",
-    "@rafael-rufino/web-components-with-litelement-publish-in-npm": "^0.1.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
