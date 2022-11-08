@@ -1,40 +1,58 @@
 import "../../styles.css";
-import { LitElement, html, customElement, property } from "lit-element";
+
+import { html, customElement, property, LitElement } from "lit-element";
 
 @customElement("input-app")
 export class Input extends LitElement {
   createRenderRoot() {
     return this;
   }
-
   @property()
   id!: string;
 
   @property()
-  label!: string;
+  name?: string;
 
   @property()
-  type!: "text" | "number" | "date" | "email" | "password";
+  label?: string;
+
+  @property()
+  type?: "text" | "number" | "date" | "email" | "password";
 
   @property()
   placeholder!: string;
 
   @property()
-  onChange!: (event: CustomEvent<HTMLInputElement>) => void;
+  onChange?: (event: MouseEvent) => void;
 
   @property()
-  value!: string | number | Date;
+  onInput?: (event: InputEvent) => void;
+
+  @property()
+  textTransform?: "uppercase" | "lowercase" | "capitalize";
+
+  @property()
+  role?: string;
+
+  @property()
+  ref?: string;
 
   render() {
     return html`
       <div>
-        <label class="tetx-base  text-left pb-1" htmlFor=${this.id}
+        <label
+          class="text-base  text-left pb-1  ${this.textTransform}"
+          htmlFor=${this.id}
           >${this.label && html`${this.label}`}
         </label>
         <input
           class="flex  w-full h-[54px] rounded text-base border-[1px] border-gray-100 mb-6 pl-[10px]  text-gray-500"
           type=${this.type}
-          onChange=${this.onChange}
+          onchange=${this.onChange}
+          ref=${this.ref}
+          name=${this.name}
+          oninput=${this.onInput}
+          role=${this.role}
           placeholder=${this.placeholder}
         />
       </div>

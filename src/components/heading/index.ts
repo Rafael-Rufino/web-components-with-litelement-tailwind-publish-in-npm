@@ -13,10 +13,15 @@ export class Heading extends LitElement {
   @property()
   description!: string;
 
+  @property()
+  textAlign?: "text-left" | "text-center" | "text-right";
+
+  @property()
+  fontSize?: "text-2xl" | "text-lg";
   render() {
     return html`
-      <div class="w-full text-center relative">
-        <h1 class="text-2xl leading-normal font-bold text-gray-300">
+      <div class="w-full ${this.textAlign}  relative">
+        <h1 class="${this.fontSize} leading-normal font-bold text-gray-300">
           ${this.title}
         </h1>
         <p class="text-base text-gray-400 leading-normal pb-6 pt-4">

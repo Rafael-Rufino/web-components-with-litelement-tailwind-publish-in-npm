@@ -6,32 +6,47 @@ export class LinkIcon extends LitElement {
   createRenderRoot() {
     return this;
   }
-
-  @property()
-  name!: string;
-
   @property()
   title!: string;
 
   @property()
-  target!: string;
+  name?: string;
 
   @property()
-  href!: string;
+  href?: string;
 
   @property()
-  src!: string;
+  as?: any;
+
+  @property()
+  to?: {
+    pathname?: string;
+    search?: string;
+    hash?: string;
+    state?: unknown;
+  };
+
+  @property()
+  role?: string;
+
+  @property()
+  src?: string;
 
   render() {
     return html`
-      <div class="flex justify-center items-center pt-9">
+      <div class="flex justify-center items-center pt-5 gap-1">
         <img src=${this.src} alt=${this.name} />
         <a
-          class="text-blue-700 transition-all underline text-base leading-normal cursor-pointer hover:filter hover: brightness-90"
+          class="text-blue-700 hover:text-blue-900   transition-colors font-sans underline text-sm leading-tight font-semibold cursor-pointer hover:filter hover: brightness-90"
           title=${this.title}
           href=${this.href}
-          >${this.name}</a
+          role=${this.role}
+          src=${this.src}
+          as=${this.as}
+          .to=${this.to}
         >
+          ${this.name}
+        </a>
       </div>
     `;
   }
